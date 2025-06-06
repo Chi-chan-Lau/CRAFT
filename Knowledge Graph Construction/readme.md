@@ -1,6 +1,6 @@
 # Knowledge Graph Construction
 
-This module implements the article-level knowledge graph construction phase of the LLM4CTI framework, transforming extracted triples from chunked CTI articles into a unified and structured knowledge graph.
+This module implements the article-level knowledge graph construction phase of the CRAFT framework, transforming extracted triples from chunked CTI articles into a unified and structured knowledge graph.
 
 ## 🔄 Workflow
 
@@ -51,9 +51,9 @@ with open('result/final_graph.json', 'w') as f:
 
 
 ## Evaluation
-We evaluate the effectiveness of LLM4CTI in transforming unstructured CTI articles into structured knowledge graphs. 
+We evaluate the effectiveness of CRAFT in transforming unstructured CTI articles into structured knowledge graphs. 
 
-| Threat Category              | LLM4CTI Precision | LLM4CTI Recall | LLM4CTI F1 | CTIKG Precision | CTIKG Recall | CTIKG F1 | GPT-4o Precision | GPT-4o Recall | GPT-4o F1 | Extractor Precision | Extractor Recall | Extractor F1 |
+| Threat Category              | CRAFT Precision | CRAFT Recall | CRAFT F1 | CTIKG Precision | CTIKG Recall | CTIKG F1 | GPT-4o Precision | GPT-4o Recall | GPT-4o F1 | Extractor Precision | Extractor Recall | Extractor F1 |
 |-----------------------------|-------------------|----------------|------------|------------------|--------------|----------|-------------------|----------------|-----------|-----------------------|-------------------|--------------|
 | APT                         | 95.39%            | 86.18%         | 90.55%     | 99.58%           | 92.80%       | 96.07%   | 98.32%            | 89.15%         | 93.51%    | 62.21%                | 46.46%            | 53.19%       |
 | Adware                      | 94.74%            | 83.64%         | 88.84%     | 93.09%           | 62.96%       | 75.12%   | 95.16%            | 73.58%         | 82.99%    | 70.79%                | 48.15%            | 57.31%       |

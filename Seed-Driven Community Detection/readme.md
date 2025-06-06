@@ -1,8 +1,8 @@
 # Seed-Driven Community Detection
 
-This module implements the **community detection** phase of the LLM4CTI framework, designed to identify cross-document semantic clusters of security entities (e.g., malware, threat actors, vulnerabilities) within the knowledge graph constructed from CTI articles.
+This module implements the **community detection** phase of the CRAFT framework, designed to identify cross-document semantic clusters of security entities (e.g., malware, threat actors, vulnerabilities) within the knowledge graph constructed from CTI articles.
 
-LLM4CTI applies a **seed-based OSSE algorithm** to detect overlapping, multi-perspective communities that highlight shared exploit chains, coordinated threat activities, and reusable infrastructure components.
+CRAFT applies a **seed-based OSSE algorithm** to detect overlapping, multi-perspective communities that highlight shared exploit chains, coordinated threat activities, and reusable infrastructure components.
 
 ---
 
@@ -71,7 +71,7 @@ visualize_community_graph_no_overlap(
 
 ### RQ4: Community Detection
 
-We examine whether LLM4CTI can uncover cross-document semantic clusters through community detection. Communities are evaluated for their edge coverage, article support, and relevance.
+We examine whether CRAFT can uncover cross-document semantic clusters through community detection. Communities are evaluated for their edge coverage, article support, and relevance.
 
 | Central Node        | Threat Type   | Edges From Core | Edges From Related | Related Article Count | Unrelated Edges |
 |---------------------|---------------|------------------|---------------------|------------------------|------------------|
@@ -93,4 +93,3 @@ We examine whether LLM4CTI can uncover cross-document semantic clusters through 
 | Java vulnerability  | vulnerability | 10               | 13                  | 6                      | 0                |
 | SMB vulnerability   | vulnerability | 8                | 38                  | 14                     | 0                |
 | **Total**           | –             | 222              | 203                 | 95                     | 10               |
-

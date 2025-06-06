@@ -10,17 +10,17 @@ To address these limitations, CRAFT employs LLMs to process correlated sentences
 
 CRAFT's architecture comprises three main phases:
 
-### 1. [Chunk-Level Knowledge Extraction](https://github.com/hiddenauthor/CRAFT/tree/main/Knowledge%20Graph%20Construction)
+### 1. [Chunk-Level Knowledge Extraction](https://github.com/Chi-chan-Lau/CRAFT/tree/main/Knowledge%20Graph%20Construction)
 - **Step-wise Distributed Guidance:** Segments CTI articles into semantically coherent text chunks, guiding LLMs through structured entity extraction and relationship inference.
 - **Dual-Context Multi-Chunk Extraction:** Combines local chunk context and global article content to extract both explicitly and implicitly stated relationships spanning distant chunks.
 
-### 2. [Article-Level Knowledge Graph Construction](https://github.com/hiddenauthor/CRAFT/tree/main/Knowledge%20Graph%20Construction)
+### 2. [Article-Level Knowledge Graph Construction](https://github.com/Chi-chan-Lau/CRAFT/tree/main/Knowledge%20Graph%20Construction)
 - Extracted entities and triples from all chunks are aggregated into an entity triple pool, followed by deduplication and entity resolution by a dedicated LLM agent, forming a unified article-level knowledge graph.
 
 ### 3. Knowledge Graph-Based Applications
-- [**GNN-Based Relationship Prediction**](https://github.com/hiddenauthor/CRAFT/tree/main/GNN-Based%20Relationship%20Prediction): Trains a Graph Neural Network (GNN) on the constructed knowledge graph to predict relationships among security entities, supporting proactive defense strategies against emerging threats.
-- [**Seed-Driven Community Detection**](https://github.com/hiddenauthor/CRAFT/tree/main/Seed-Driven%20Community%20Detection): Applies community detection algorithms using seed nodes categorized by threat types (e.g., malware, threat actors, vulnerabilities) to uncover densely connected subgraphs that represent different perspectives of the same threat across multiple CTI articles.
-- [**Question Answering Based on Knowledge Graph**](https://github.com/hiddenauthor/CRAFT/tree/main/Question%20Answering%20based%20on%20Knowledge%20Graph): Leverages the structured knowledge graph to support LLMs in answering CTI-related multiple-choice questions, improving comprehension and decision-making on cyber threats.
+- [**GNN-Based Relationship Prediction**](https://github.com/Chi-chan-Lau/CRAFT/tree/main/GNN-Based%20Relationship%20Prediction): Trains a Graph Neural Network (GNN) on the constructed knowledge graph to predict relationships among security entities, supporting proactive defense strategies against emerging threats.
+- [**Seed-Driven Community Detection**](https://github.com/Chi-chan-Lau/CRAFT/tree/main/Seed-Driven%20Community%20Detection): Applies community detection algorithms using seed nodes categorized by threat types (e.g., malware, threat actors, vulnerabilities) to uncover densely connected subgraphs that represent different perspectives of the same threat across multiple CTI articles.
+- [**Question Answering Based on Knowledge Graph**](https://github.com/Chi-chan-Lau/CRAFT/tree/main/Question%20Answering%20based%20on%20Knowledge%20Graph): Leverages the structured knowledge graph to support LLMs in answering CTI-related multiple-choice questions, improving comprehension and decision-making on cyber threats.
 
 ![CRAFT Overview](https://i.imgur.com/Vmbwc7R.png)  
 Figure: The overall architecture of CRAFT, including chunk-level knowledge extraction, article-level graph construction, and graph-based security applications.

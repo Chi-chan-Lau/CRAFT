@@ -1,6 +1,6 @@
 # GNN-Based Relationship Prediction
 
-This module implements the **GNN-based link prediction** component of the LLM4CTI framework. It takes the knowledge graphs constructed from CTI articles and applies a Graph Neural Network (GNN) model to uncover unseen or emerging relationships between threat entities (e.g., malware, vulnerabilities, threat actors).
+This module implements the **GNN-based link prediction** component of the CRAFT framework. It takes the knowledge graphs constructed from CTI articles and applies a Graph Neural Network (GNN) model to uncover unseen or emerging relationships between threat entities (e.g., malware, vulnerabilities, threat actors).
 
 ---
 
@@ -57,7 +57,7 @@ Run through the notebook. It will:
 
 ### RQ3: Relationship Prediction
 
-We evaluate how LLM4CTI’s knowledge graphs can support link prediction using GNN models. This task measures the ability to uncover latent relationships among security entities.
+We evaluate how CRAFT’s knowledge graphs can support link prediction using GNN models. This task measures the ability to uncover latent relationships among security entities.
 
 | Link Type                         | Count | Precision | Recall  | F1 Score |
 |----------------------------------|-------|-----------|---------|----------|
